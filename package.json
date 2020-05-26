@@ -1,15 +1,22 @@
 {
   "name": "vue-simple-tree",
   "version": "0.1.0",
+  "author": "KarinP",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name vueSimpleTree src/components/Tree/Tree.vue"
   },
+  "main": "dist/vueSimpleTree.umd.js",
+  "unpkg": "dist/vueSimpleTree.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
