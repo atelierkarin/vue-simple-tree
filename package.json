@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:npm": "vue-cli-service build --target lib --name vueSimpleTree src/components/Tree/Tree.vue"
+    "build:npm": "vue-cli-service build --target lib --name vueSimpleTree src/components/Tree/SimpleTree.vue"
   },
   "main": "dist/vueSimpleTree.umd.js",
   "unpkg": "dist/vueSimpleTree.umd.min.js",
