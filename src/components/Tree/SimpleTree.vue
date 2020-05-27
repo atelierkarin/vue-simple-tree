@@ -110,8 +110,8 @@ export default {
   border-bottom: none !important;
 }
 .treeview span.indent {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .treeview span.spacing {
   margin-left: 2px;

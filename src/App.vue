@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import SimpleTree from "./components/Tree/SimpleTree";
 
 export default {
