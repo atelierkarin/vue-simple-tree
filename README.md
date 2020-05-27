@@ -1,7 +1,7 @@
 # Simple Tree
 
-Since a simple bootstrap 3 tree style is needed, I create this library for my usage.
-It is expected to have bootstrap 3 CSS enabled when using this component.
+Since a simple bootstrap 3 tree style is needed, I create this library for my use.
+This Tree will read an array of trees, and reply an array of `id` from the selected "target" nodes.
 
 ## Usage
 
