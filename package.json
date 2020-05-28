@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap3-simple-tree",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "author": "KarinP",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,8 @@
   "unpkg": "dist/vueSimpleTree.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "bootstrap": "^3.4.1"
   },
   "files": [
     "dist"
@@ -20,9 +21,9 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
-    "bootstrap": "^3.4.1",
     "vue-template-compiler": "^2.6.11"
   },
+  "homepage": "https://github.com/atelierkarin/vue-simple-tree",
   "repository": {
     "type": "git",
     "url": "https://github.com/atelierkarin/vue-simple-tree"

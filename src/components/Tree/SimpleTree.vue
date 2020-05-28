@@ -8,11 +8,7 @@
       :class="'treeview-' + t.id"
     >
       <ul class="list-group">
-        <tree-element
-          :nodeData="t"
-          :checkedNodes="checkedNodes"
-          @check="onCheck"
-        />
+        <tree-element :nodeData="t" :checkedNodes="checkedNodes" @check="onCheck" />
       </ul>
     </div>
   </div>
@@ -21,19 +17,21 @@
 <script>
 import TreeElement from "./TreeElement";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 export default {
   components: {
-    TreeElement,
+    TreeElement
   },
   props: {
     data: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     value: {
       type: Array,
-      default: () => [],
-    },
+      default: () => []
+    }
   },
   watch: {
     checkedNodes(v) {
@@ -43,7 +41,7 @@ export default {
       if (JSON.stringify(this.checkedNodes) !== JSON.stringify(v)) {
         this.checkedNodes = v;
       }
-    },
+    }
   },
   methods: {
     onCheck(data) {
@@ -57,7 +55,7 @@ export default {
       } else {
         if (node.children && node.children.length > 0) {
           let targetNodes = [];
-          node.children.forEach((child) => {
+          node.children.forEach(child => {
             targetNodes = [...targetNodes, ...this.getAllTargetNodes(child)];
           });
           return targetNodes;
@@ -69,20 +67,20 @@ export default {
 
     setCheckStatus(ids, value) {
       if (!value) {
-        this.checkedNodes = this.checkedNodes.filter((cn) => !ids.includes(cn));
+        this.checkedNodes = this.checkedNodes.filter(cn => !ids.includes(cn));
       } else {
         this.checkedNodes = [...new Set([...this.checkedNodes, ...ids])];
       }
-    },
+    }
   },
   created() {
     this.checkedNodes = this.value;
   },
   data() {
     return {
-      checkedNodes: [],
+      checkedNodes: []
     };
-  },
+  }
 };
 </script>
 
