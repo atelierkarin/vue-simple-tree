@@ -3,6 +3,8 @@
 Since a simple bootstrap 3 tree style is needed, I create this library for my use.
 This Tree will read an array of trees, and reply an array of `id` from the selected "target" nodes.
 
+Simple Demo: [Demo](https://codesandbox.io/s/quizzical-mclaren-i4zlf)
+
 ## Usage
 
 Define the tree structure by the following, specify the target node by adding `type: "target"`
